@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.classpark.small</groupId>
+    <artifactId>small</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>small</name>
+    <description>聚合服务</description>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <modules>
+        <module>small-coupon</module>
+        <module>small-member</module>
+        <module>small-order</module>
+        <module>small-product</module>
+        <module>small-ware</module>
+        <module>renren-fast</module>
+        <module>small-common</module>
+        <module>small-gateway</module>
+        <module>small-third-party</module>
+        <module>small-search</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
